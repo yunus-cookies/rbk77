@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:types": "contentful-typescript-codegen --output src/@types/contentful.d.ts",
+    "build:prod": "npm run generate:types && next build && next export"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -16,5 +18,12 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
+    "contentful": "^9.2.11",
+    "contentful-management": "^10.20.1",
+    "contentful-typescript-codegen": "^3.2.3",
+    "dotenv": "^16.0.3"
   }
 }

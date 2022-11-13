@@ -108,6 +108,16 @@
   margin-left: 0.5rem;
 }
 
+.article {
+  max-width: 780px;
+  line-height: 1.5;
+}
+
+.publishDate {
+  font-size: 0.875rem;
+  color: #808080;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
