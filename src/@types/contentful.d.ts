@@ -39,6 +39,6 @@ export interface IArticle extends Entry<IArticleFields> {
 
 export type CONTENT_TYPE = "article";
 
-export type LOCALE_CODE = "en-US";
+export type LOCALE_CODE = "da-DK";
 
-export type CONTENTFUL_DEFAULT_LOCALE_CODE = "en-US";
+export type CONTENTFUL_DEFAULT_LOCALE_CODE = "da-DK";

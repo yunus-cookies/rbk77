@@ -4,6 +4,8 @@ import ContentService from "../src/@types/util/content-service";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Head from "next/head";
+import Hero from "../components/hero/hero";
+import Header from "../components/header/header";
 
 interface Props {
   articles: IArticleFields[];
@@ -20,7 +22,8 @@ const Home: NextPage<Props> = ({ articles }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Header />
+      <Hero />
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to my Harry Potter blog!</h1>
 
